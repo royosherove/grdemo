@@ -47,6 +47,7 @@ A successful answer will fulfill the above criteria.
         }
 
         [TestCase(3,0,0,3     ,1)]
+        [TestCase(3,1,1,1,0,0,6     ,4)]
         public void GetPivot_Multiple_ReturnsLeftMost(params int[] theinputWithExpected)
         {
             int[] input = theinputWithExpected.Take(theinputWithExpected.Length-1).ToArray();
